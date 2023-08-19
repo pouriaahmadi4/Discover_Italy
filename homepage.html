@@ -22,7 +22,8 @@
                 <li><a href="./homepage.html" target="_self">Where to Go</a></li>
                 <li><a href="./regionalfoods.html" target="_blank">What to Eat</a></li>
                 <li><a href="./characters.html" target="_blank">Who to Know</a></li>
-                <li><a href="./cultureandart.html" target="_blank">How to find art</a></li>   
+                <li><a href="./cultureandart.html" target="_blank">How to find art</a></li>
+                <li><a href="#bottom">About Us</a></li>   
                 <!-- Everyone please use either <nav> or <aside> to put other links -->
             </ul>
         </nav>
@@ -62,12 +63,13 @@
 
                 </ol>        
         </section>
-
+        
         <section>
-            <p>First <em>Fetch</em> your espresso and let's decode this artistic adventure.<br/>
+            <p>
+                First <em>Fetch</em> your espresso and let's decode this artistic adventure.<br/>
                 Let's schedule your "Tour de Italia." Start in Rome, where gladiators once beat the shit! out of each other, in the Colosseum - don't worry, you're not expected to fight any lions like <em>Maximus</em> did. Then, go north to Florence for some VIP time with Botticelli, and don't forget to give the Leaning Tower of Pisa a friendly <em>Push</em> - In Venice, you'll feel like a character in storybook as you navigate canals and visit a palace that's fancier than your wildest dreams.<br/> Milan's got a Leonardo masterpiece for you, and Naples will treat you with both ancient city vibes and a Pizza Napolitana - DO not <em>Request</em> for a change ... And that's just the beginning.
             </p>
-            <h5>Here is a table for you showing your scheduled destinations :</h5>
+            <h3>Here is a table for you showing your scheduled destinations :</h3>
             <table border="2">
                 <thead>
                     <td><strong>Name of City</strong></td>
@@ -135,7 +137,52 @@
                         <td>Sicily</td>
                         <td>Palermo Cathedral and Markets</td>
                     </tr>
-                </tbody>    
+                </tbody>
+            </table>  
         </section>
-    </main>    
+
+        <section>
+            <form action="https://google.com/search" target="_blank" method="get">
+                <label for="search"> Search in google for more info about destinations: </label>
+                <input type="search" name="q" id="search" placeholder="Favorite Place"/>
+                <button>search</button>
+            </form>
+        </section>
+
+        <aside>
+            <form>
+                <fieldset>
+                    <legend><h3>Submit to Pinocchio's weekly newsletter</h3></legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value="name" required>
+                        
+                        <label for="gender">gender : </label>
+                        <select name="gender" id="gender" required>
+                          <option value="">please select gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
+        
+                        <label for="dateofbirth">BIRTHDATE : </label>
+                        <input type="date" name="dateOfBirth" id="dateofbirth" value="dateofbirth" required/><hr/>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="email" required/>
+                        
+                        <label for="phone">PHONE NUMBER :</label>
+                        <input type="number" name="phone" id="phone" value="phone" requiered/>
+        
+                        <label for="username">USERNAME :</label>
+                        <input type="text" name="username" id="username" value="username" requiered>
+                        
+                        <label for="password">PASSWORD : </label>
+                        <input type="password" name="password" id="password" value="off" required/><hr/>
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form>
+        </aside>
+    </main> 
+    <footer>
+        
+    </footer>   
 </body>
